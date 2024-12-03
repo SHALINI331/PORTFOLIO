@@ -1,0 +1,71 @@
+/* General Styles */
+.skills-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f4f7fb;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Skills Row */
+.skills-row {
+  display: flex;
+  justify-content: space-between;  /* Distributes the boxes evenly */
+  gap: 20px;                      /* Space between each box */
+  flex-wrap: wrap;                 /* Allows wrapping on smaller screens */
+  padding: 0 20px;
+}
+
+/* Skill Box */
+.skill-box {
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 180px;                /* Flexible basis of 180px with equal growth and shrink */
+  min-width: 180px;               /* Ensures each box has a minimum width */
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill Icon */
+.skill-icon {
+  font-size: 3rem;
+  color: #4c6ef5;
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.skill-box:hover .skill-icon {
+  color: #f76c6c;
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+.skill-box:hover .skill-name {
+  color: #f76c6c;
+}

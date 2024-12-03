@@ -1,0 +1,73 @@
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .contact-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .contact-item p,
+  .contact-item a {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item a:hover {
+    color: #6a11cb;
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+    color: #6a11cb;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    transform: scale(1.2);
+    color: #2575fc;
+  }
+  
+  .line {
+    height: 3px;
+    width: 40px;
+    background: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-flow {
+      flex-direction: column;
+    }
+  
+    .line {
+      height: 40px;
+      width: 3px;
+    }
+  }
+  
