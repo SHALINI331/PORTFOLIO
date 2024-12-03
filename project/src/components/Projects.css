@@ -1,11 +1,13 @@
+/* Title */
 h1 {
   font-size: 2.5rem; /* Adjust this value to make it larger */
   font-weight: bold;
 }
 
+/* Projects Section */
 .projects {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 20px; /* Added padding for smaller screens */
 }
 
 .project-boxes {
@@ -57,4 +59,57 @@ h1 {
 
 .view-btn:hover {
   background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .project-boxes {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Smaller grid boxes for tablets */
+    gap: 30px; /* Reduced gap between boxes */
+  }
+
+  .project-box {
+    padding: 30px; /* Slightly reduced padding for smaller screens */
+  }
+
+  .project-box h2 {
+    font-size: 2rem; /* Smaller title size for tablets */
+  }
+
+  .project-box p {
+    font-size: 1rem; /* Smaller description text */
+  }
+
+  .view-btn {
+    font-size: 1rem; /* Smaller button text */
+    padding: 12px 25px; /* Reduced padding */
+  }
+}
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .project-boxes {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Single column layout on mobile */
+    gap: 20px; /* Further reduced gap between boxes */
+  }
+
+  .project-box {
+    padding: 20px; /* Even smaller padding on mobile */
+    min-height: 250px; /* Reduced height for mobile screens */
+  }
+
+  .project-box h2 {
+    font-size: 1.8rem; /* Smaller heading for mobile */
+  }
+
+  .project-box p {
+    font-size: 0.9rem; /* Smaller text for description */
+  }
+
+  .view-btn {
+    font-size: 1rem; /* Smaller font size for the button */
+    padding: 10px 20px; /* Adjusted padding */
+  }
 }

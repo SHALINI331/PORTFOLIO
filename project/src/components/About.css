@@ -1,33 +1,79 @@
 .about {
-    display: flex;
-    align-items: center; /* Vertically aligns content */
-    justify-content: space-between;
-    padding: 40px;
-    background: #f7f7f7;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* Vertically aligns content */
+  justify-content: space-between;
+  padding: 40px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.about-image img {
+  width: 300px; /* Adjust image size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+
+/* For Tablets and Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column; /* Stack the text and image vertically */
+    padding: 30px; /* Reduced padding for smaller screens */
   }
-  
+
   .about-text {
-    flex: 1;
-    margin-right: 30px;
+    margin-right: 0;
+    margin-bottom: 20px; /* Adds space between text and image */
   }
-  
+
   .about-text h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #34495e;
+    font-size: 1.8rem; /* Reduced heading font size */
   }
-  
+
   .about-text p {
-    font-size: 1rem;
-    color: #2c3e50;
+    font-size: 0.95rem; /* Reduced text size for better readability */
   }
-  
+
   .about-image img {
-    width: 300px; /* Adjust image size */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px; /* Reduced image size */
   }
-  
+}
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .about {
+    flex-direction: column; /* Stack text and image vertically */
+    padding: 20px; /* Even less padding for mobile */
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem; /* Smaller heading for mobile */
+  }
+
+  .about-text p {
+    font-size: 0.9rem; /* Smaller text for mobile */
+  }
+
+  .about-image img {
+    width: 200px; /* Smaller image for mobile */
+  }
+}

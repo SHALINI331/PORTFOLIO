@@ -1,3 +1,4 @@
+/* Base Styles */
 .certifications-section {
   padding: 50px 0;
   background-color: #f4f4f4;
@@ -15,7 +16,7 @@
   justify-content: center; /* Centers the certificates horizontally */
   align-items: center; /* Aligns items vertically in the center */
   gap: 30px; /* Adds space between each certificate */
-  flex-wrap: no-wrap; /* Prevents certificates from wrapping to the next line */
+  flex-wrap: wrap; /* Allows certificates to wrap when space is tight */
   overflow-x: auto; /* Enables horizontal scrolling if needed */
   padding-bottom: 20px; /* Adds space at the bottom to avoid scroll cutoff */
 }
@@ -53,4 +54,33 @@
 
 .download-btn:hover {
   background-color: #1f6fc7;
+}
+
+/* Media Queries */
+
+/* For Tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .certifications-container {
+    gap: 20px; /* Reduced gap for smaller screens */
+  }
+
+  .certification-item {
+    width: 45%; /* 2 certificates per row on tablet screens */
+  }
+}
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .certifications-container {
+    gap: 15px; /* Reduced gap further for smaller screens */
+  }
+
+  .certification-item {
+    width: 90%; /* 1 certificate per row on mobile */
+  }
+
+  .download-btn {
+    padding: 12px 25px; /* Larger buttons on mobile */
+    font-size: 1.1rem;
+  }
 }
