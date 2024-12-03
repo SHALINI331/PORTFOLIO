@@ -8,19 +8,19 @@ const Certifications = () => {
       <div className="certifications-container">
         <div className="certification-item">
           <h3>GENERATIVE AI</h3>
-          <a href="/certificates/certificate1.pdf" download>
+          <a href="/certificates/GEN AI.pdf" download>
             <button className="download-btn">Download</button>
           </a>
         </div>
         <div className="certification-item">
           <h3>ADVANCE JAVA PROGRAMMING</h3>
-          <a href="/certificates/certificate2.pdf" download>
+          <a href="/certificates/NPTEL.pdf" download>
             <button className="download-btn">Download</button>
           </a>
         </div>
         <div className="certification-item">
           <h3>OBJECT ORIENTED PROGRAMMING</h3>
-          <a href="/certificates/certificate3.pdf" download>
+          <a href="/certificates/oops.pdf" download>
             <button className="download-btn">Download</button>
           </a>               
         </div>
