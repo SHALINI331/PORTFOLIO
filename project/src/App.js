@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.css';  // Import the footer-specific CSS in Footer.js
 
 import Navbar from './components/Navbar';

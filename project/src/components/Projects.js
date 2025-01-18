@@ -26,6 +26,13 @@ const Project = () => {
           <p>An e-commerce store built with React.js, featuring product browsing and purchase functionality.</p>
           <button className="view-btn">View Project</button>
         </div>
+
+        <div className="project-box">
+          <h2>Interactive Online Yoga Academy</h2>
+          <p>Yoga Academy designed to provide users with live yoga sessions, personalized fitness plans, and video tutorials. </p>
+          <button className="view-btn">View Project</button>
+        </div>
+
       </div>
     </section>
   );

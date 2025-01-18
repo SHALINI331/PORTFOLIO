@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "gh-pages": "^6.2.0"
+  },
+  "dependencies": {
+    "project": "file:"
   }
 }

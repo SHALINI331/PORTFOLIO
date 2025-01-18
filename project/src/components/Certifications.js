@@ -25,7 +25,7 @@ const Certifications = () => {
           </a>               
         </div>
         <div className="certification-item">
-          <h3>INTRODUCTION TO DEVEOPS</h3>
+          <h3>INTRODUCTION TO DEVOPS</h3>
           <a href="/certificates/DEVOPS.pdf" download>
             <button className="download-btn">Download</button>
           </a>               

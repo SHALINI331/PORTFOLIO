@@ -8,6 +8,10 @@ h1 {
 .projects {
   text-align: center;
   padding: 50px 20px; /* Added padding for smaller screens */
+  display: flex; /* Using flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack the content vertically */
 }
 
 .project-boxes {
@@ -15,6 +19,11 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
   gap: 40px; /* Increase the gap between the boxes */
   margin-top: 50px;
+  justify-items: center; /* Center the items inside the grid */
+  grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box5 box6"
+    "box7 box8 box9"; /* Define a 3x3 grid for example */
 }
 
 .project-box {
@@ -22,6 +31,7 @@ h1 {
   border: 1px solid #ccc;
   padding: 40px; /* Larger padding inside the box */
   text-align: center;
+  justify-content: center; 
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
@@ -59,6 +69,13 @@ h1 {
 
 .view-btn:hover {
   background-color: #0056b3;
+}
+
+/* Specific Grid Box for Centered Box */
+.project-box-center {
+  grid-column: span 3; /* Makes the box take the full width of the grid */
+  grid-row: span 2; /* Makes it taller */
+  text-align: center;
 }
 
 /* Media Queries for Responsiveness */
@@ -113,3 +130,4 @@ h1 {
     padding: 10px 20px; /* Adjusted padding */
   }
 }
+
